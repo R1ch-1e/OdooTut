@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+   
+  <!-- Top menu -->
+  <menuitem id="estate_menu_root" name="Estate"/>
+
+
+  <!-- Advertisement menu -->
+  <menuitem id="estate_menu_advertisement" name="Advertisements" parent="estate_menu_root"/>
+  <menuitem id="estate_properties_menu" action="estate_create_new_property_action" parent="estate_menu_advertisement"/>
+
+
+  <!-- Settings Menu -->
+  <menuitem id="estate_menu_settings" name="Settings" parent="estate_menu_root"/>
+  <menuitem id="estate_property_type_menu" action="estate_property_type_action" parent="estate_menu_settings"/>
+  <menuitem id="estate_property_tag_menu" action="estate_property_tag_action" parent="estate_menu_settings"/>
+   
+
+</odoo>
+
+
